@@ -46,6 +46,8 @@ dist/$(DIST_NAME).js: package.json package-lock.json $(SCRIPT_FILES)
 	npm run build
 	mv -v dist/src/* dist/
 
+$(DECLARATION_FILES): dist/$(DIST_NAME).js
+
 clean:
 	rm -rf dist .nyc_output
 .PHONY: clean
