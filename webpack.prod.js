@@ -3,8 +3,8 @@ const path = require("path");
 module.exports = {
   entry: path.resolve(__dirname, "src/size.ts"),
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "parsegraph-size.js",
+    path: path.resolve(__dirname, "dist-prod"),
+    filename: "size-prod.js",
     globalObject: "this",
     library: "parsegraph",
     libraryTarget: "umd",
@@ -12,14 +12,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|ts|tsx?)$/,
+        test: /\.(js)$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'ts-loader']
+        use: ['babel-loader'],
       },
       {
-        test: /\.(glsl|vs|fs|vert|frag)$/,
+        test: /\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
-        use: ["ts-shader-loader"],
       },
     ],
   },
@@ -27,6 +27,5 @@ module.exports = {
     extensions: [".js", ".ts", ".tsx", ".glsl"],
     modules: [path.resolve(__dirname, "src"), "node_modules"],
   },
-  mode: "development",
-  devtool: "eval-source-map",
+  mode: "production",
 };
