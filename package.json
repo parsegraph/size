@@ -1,6 +1,6 @@
 {
   "name": "parsegraph-size",
-  "version": "1.5.5-dev",
+  "version": "1.5.6-dev",
   "description": "size",
   "main": "dist/parsegraph-size.js",
   "types": "dist/parsegraph-size.d.ts",
