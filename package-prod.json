@@ -1,0 +1,17 @@
+{
+    "name": "parsegraph-size",
+    "version": "1.5.5",
+    "description": "size",
+    "main": "dist/parsegraph-size.js",
+    "types": "dist/parsegraph-size.d.ts",
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/parsegraph/size.git"
+    },
+    "author": "Rainback, Inc.",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/parsegraph/size/issues"
+    },
+    "homepage": "https://github.com/parsegraph/size#readme"
+  }
