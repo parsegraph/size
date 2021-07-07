@@ -4,7 +4,7 @@ module.exports = {
   entry: path.resolve(__dirname, "src/size.ts"),
   output: {
     path: path.resolve(__dirname, "dist-prod"),
-    filename: "size-prod.js",
+    filename: "parsegraph-size.js",
     globalObject: "this",
     library: "parsegraph",
     libraryTarget: "umd",
