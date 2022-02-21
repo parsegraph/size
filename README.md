@@ -1,24 +1,13 @@
-# microproject
+# parsegraph-size
 
-This is for Node projects:
+This module provides a Size object, for managing a width/height combination:
 
-## Setup
+    import Size from 'parsegraph-size';
 
-1. Pick a new package name.
+    const size = new Size(500, 500);
+    const scaled = size.scaled(50);
+    console.log(scaled);
 
-2. Go to https://github.com/parsegraph/ and create a new repository using that name.
+Output:
 
-3. Clone latest microproject from https://github.com/parsegraph/microproject
-
-4. Run ./update-package-name.sh with your package name:
-
-<pre>
-  # Set the package name to test
-  ./update-package-name.sh test
-</pre>
-
-5. Commit (e.g. "Give package a name")
-
-6. Push the repository to Github.
-
-See DEVELOPING.md and DEPLOYING.md
+    [w=50, h=50]
