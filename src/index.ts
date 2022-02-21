@@ -2,8 +2,8 @@ let sizeCount: number = 0;
 export default class Size {
   id: number;
   length: number;
-  '0': number;
-  '1': number;
+  "0": number;
+  "1": number;
 
   constructor(w?: number, h?: number) {
     this.id = sizeCount++;
@@ -52,7 +52,6 @@ export default class Size {
   }
 
   toString(): string {
-    return '[w=' + this.width() + ', h=' + this.height() + ']';
+    return "[w=" + this.width() + ", h=" + this.height() + "]";
   }
 }
-

@@ -1,8 +1,8 @@
 var assert = require("assert");
-import Size from "../dist/size";
+import Size from "../src/index";
 
 describe("Size", function () {
-  it("works", ()=>{
+  it("works", () => {
     const s = new Size(1, 2);
     assert.equal(s.width(), 1);
     assert.equal(s.height(), 2);
@@ -14,7 +14,7 @@ describe("Size", function () {
     assert.equal(s.height(), 0);
   });
 
-  it("works without an argument", ()=>{
+  it("works without an argument", () => {
     const s = new Size();
     assert.equal(s.width(), 0);
     assert.equal(s.height(), 0);
