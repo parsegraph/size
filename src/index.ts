@@ -17,6 +17,20 @@ export default class Size {
     this.length = 2;
   }
 
+  copyFrom(other: Size) {
+    this[0] = other[0];
+    this[1] = other[1];
+  }
+
+  copyTo(other: Size) {
+    other[0] = this[0];
+    other[1] = this[1];
+  }
+
+  clone() {
+    return new Size(this[0], this[1]);
+  }
+
   clear(): void {
     this[0] = 0;
     this[1] = 0;
@@ -41,6 +55,11 @@ export default class Size {
 
   setWidth(width: number): void {
     this[0] = width;
+  }
+
+  setSize(w: number, h:number) {
+    this[0] = w;
+    this[1] = h;
   }
 
   height(): number {
