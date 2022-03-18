@@ -31,6 +31,14 @@ export default class Size {
     return new Size(this[0], this[1]);
   }
 
+  nonzero() {
+    return !this.zero();
+  }
+
+  zero() {
+    return this.width() === 0 && this.height() === 0;
+  }
+
   clear(): void {
     this[0] = 0;
     this[1] = 0;
