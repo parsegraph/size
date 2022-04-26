@@ -1,6 +1,6 @@
 {
   "name": "parsegraph-size",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "size",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
