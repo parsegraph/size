@@ -1,4 +1,4 @@
-var assert = require("assert");
+const assert = require("assert");
 import Size from "../src/index";
 
 describe("Size", function () {

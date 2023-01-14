@@ -65,7 +65,7 @@ export default class Size {
     this[0] = width;
   }
 
-  setSize(w: number, h:number) {
+  setSize(w: number, h: number) {
     this[0] = w;
     this[1] = h;
   }
